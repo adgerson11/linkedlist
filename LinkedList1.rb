@@ -25,7 +25,7 @@ class Stack
     end
 end
 
-def reverse_list(list)
+def reverse_list(list, previous=nil)
     stack = Stack.new
     while list
         stack.push(list.value)
